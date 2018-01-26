@@ -32,7 +32,51 @@
                     <div id="chart"></div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-8">
+                   <div class="panel">
+
+                        <table class="table">
+                            <caption style="font-weight: 500;">Your txn in current Month</caption>
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Txn Id</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Date</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>000123</td>
+                                <td><fmt:formatNumber value="800.00" type="currency"/></td>
+                                <td><fmt:parseDate value="2017-11-10" pattern="yyyy-MM-dd" var="parsedDate" type="date" />
+                                    <fmt:formatDate pattern="dd-MM-yyyy" value="${parsedDate}" /></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>000124</td>
+                                <td><fmt:setLocale value = "en_US"/><fmt:formatNumber value="980.00" type="currency"/></td>
+                                <td><fmt:parseDate value="2017-12-10" pattern="yyyy-MM-dd" var="parsedDate" type="date" />
+                                    <fmt:formatDate pattern="dd-MM-yyyy" value="${parsedDate}" /></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>000125</td>
+                                <td><fmt:setLocale value = "en_US"/><fmt:formatNumber value="1080.00" type="currency"/></td>
+                                <td><fmt:parseDate value="2018-01-10" pattern="yyyy-MM-dd" var="parsedDate" type="date" />
+                                    <fmt:formatDate pattern="dd-MM-yyyy" value="${parsedDate}" /></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                 </div>
+             </div>
         </div>
+
     </div>
 
 
