@@ -3,7 +3,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <img src="<spring:message code='TC_LOGO'/>" style="width:106px; height:59px; ;margin:5px; padding:5px;"/>
+            <img src="<spring:message code='TC_LOGO'/>" style="width:116px; height:66px; ;margin:5px; padding:5px;"/>
         </div>
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">

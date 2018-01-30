@@ -23,16 +23,12 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <div class="panel panel-default">
-          <div class="padder">
-            <div  style="padding: 80px;" align="center">       
+           <div  style="padding: 80px;" align="center">
               <span class="titleStep">
                 An error occurred, please contact Technical Support.
               </span>
             </div>
-          </div>
-        </div>
-      </div>
+         </div>
     </div>
   </div>
 
@@ -40,14 +36,20 @@
   <div class="row">
     <div class="lg">
       <div class="panel panel-default">
-        <spring:message code='SUPPORT_EMAIL' /><br />
+        <div class="col-lg-3"></div>
+          <div class="col-lg-3">
+        <spring:message code='SUPPORT_EMAIL' />
+          </div>
+          <div class="col-lg-3">
         <spring:message code='SUPPORT_PHONE' />
+          </div>
+        <div class="col-lg-12"></div>
       </div>
     </div>
   </div>
 
   <!-- pf footer -->
-  <div class="footer">
+  <div class="footer" style="text-align: center;">
     <%
       Calendar cal = Calendar.getInstance();
       pageContext.setAttribute("calendarYear", "" + cal.get(Calendar.YEAR));

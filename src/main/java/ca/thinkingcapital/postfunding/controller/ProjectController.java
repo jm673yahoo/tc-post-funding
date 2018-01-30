@@ -45,7 +45,55 @@ public class ProjectController {
             return new ModelAndView("project", "command", cmd);
         } catch (Exception e) {
             logger.error("failed!", e);
-            return new ModelAndView("critical_error");
+            return new ModelAndView("error");
+        }
+    }
+
+    @RequestMapping(value="portfolio.htm", method=RequestMethod.GET)
+    public ModelAndView showPortfolio(HttpServletRequest req, HttpServletResponse res) throws Exception {
+        try {
+
+
+            req.getSession().invalidate();
+            String siteLang = req.getParameter(PostfundingConstants.LANG_SITE);
+
+            if (StringUtils.isBlank(siteLang)) {
+                req.setAttribute("siteLang", "en_US");
+            }
+
+            Locale locale = LocaleUtils.toLocale(siteLang);
+            WebUtils.setSessionAttribute(req, "locale", locale);
+            String multiLingualFlag = "true";
+
+            LoginMessage cmd = new LoginMessage();
+            return new ModelAndView("portfolio", "command", cmd);
+        } catch (Exception e) {
+            logger.error("failed!", e);
+            return new ModelAndView("error");
+        }
+    }
+
+    @RequestMapping(value="bizInfo.htm", method=RequestMethod.GET)
+    public ModelAndView showBizInfo(HttpServletRequest req, HttpServletResponse res) throws Exception {
+        try {
+
+
+            req.getSession().invalidate();
+            String siteLang = req.getParameter(PostfundingConstants.LANG_SITE);
+
+            if (StringUtils.isBlank(siteLang)) {
+                req.setAttribute("siteLang", "en_US");
+            }
+
+            Locale locale = LocaleUtils.toLocale(siteLang);
+            WebUtils.setSessionAttribute(req, "locale", locale);
+            String multiLingualFlag = "true";
+
+            LoginMessage cmd = new LoginMessage();
+            return new ModelAndView("bizInfo", "command", cmd);
+        } catch (Exception e) {
+            logger.error("failed!", e);
+            return new ModelAndView("error");
         }
     }
 }
