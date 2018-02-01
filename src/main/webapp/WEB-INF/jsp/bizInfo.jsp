@@ -101,28 +101,21 @@
                                 <tr>
                                     <th scope="row">1</th>
                                     <td>000123</td>
-                                    <td><fmt:formatNumber value="800.00" type="currency" currencyCode="CAD"/></td>
+                                    <td>Business Register Document.pdf - Quebec</td>
                                     <td><fmt:parseDate value="2017-11-10" pattern="yyyy-MM-dd" var="parsedDate" type="date" />
                                         <fmt:formatDate pattern="yyyy-MM-dd" value="${parsedDate}" /></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
                                     <td>000124</td>
-                                    <td><fmt:setLocale value = "en_US"/><fmt:formatNumber value="980.00" type="currency" currencyCode="CAD"/></td>
+                                    <td>Leasing document.pdf -  Montreal</td>
                                     <td><fmt:parseDate value="2017-12-10" pattern="yyyy-MM-dd" var="parsedDate" type="date" />
                                         <fmt:formatDate pattern="yyyy-MM-dd" value="${parsedDate}" /></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
                                     <td>000125</td>
-                                    <td><fmt:setLocale value = "en_US"/><fmt:formatNumber value="1080.00" type="currency" currencyCode="CAD"/></td>
-                                    <td><fmt:parseDate value="2018-01-10" pattern="yyyy-MM-dd" var="parsedDate" type="date" />
-                                        <fmt:formatDate pattern="yyyy-MM-dd" value="${parsedDate}" /></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>000125</td>
-                                    <td><fmt:formatNumber value="1180.00" type="currency" currencyCode="CAD"/></td>
+                                    <td>Ownership document.pdf -  from Lawyer Patrik</td>
                                     <td><fmt:parseDate value="2018-01-10" pattern="yyyy-MM-dd" var="parsedDate" type="date" />
                                         <fmt:formatDate pattern="yyyy-MM-dd" value="${parsedDate}" /></td>
                                 </tr>

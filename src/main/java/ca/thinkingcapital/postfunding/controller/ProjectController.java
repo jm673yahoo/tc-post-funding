@@ -49,6 +49,22 @@ public class ProjectController {
         }
     }
 
+    @RequestMapping(value="project.htm", method=RequestMethod.GET)
+    public ModelAndView showProject(HttpServletRequest req, HttpServletResponse res) throws Exception {
+        try {
+
+
+            req.getSession().invalidate();
+
+
+            LoginMessage cmd = new LoginMessage();
+            return new ModelAndView("project", "command", cmd);
+        } catch (Exception e) {
+            logger.error("failed!", e);
+            return new ModelAndView("error");
+        }
+    }
+
     @RequestMapping(value="portfolio.htm", method=RequestMethod.GET)
     public ModelAndView showPortfolio(HttpServletRequest req, HttpServletResponse res) throws Exception {
         try {
