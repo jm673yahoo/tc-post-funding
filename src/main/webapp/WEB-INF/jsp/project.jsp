@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Personal Portfolio - ThinkingCapital Postfunding</title>
+    <title>Personal Portfolio - mydemo Postfunding</title>
     <%@ include file="fragments/header.jspf"%>
 
 </head>
@@ -24,7 +24,7 @@
                     <br /><br /><br /><br />
                     <p><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>&nbsp;&nbsp; <a href="project.htm" title="Dashbord">My Dashboard</a></p>
                     <p><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>&nbsp;&nbsp; <a href="portfolio.htm" title="Portfolio">My Portfolio</a></p>
-                    <p><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>&nbsp;&nbsp; <a href="bizInfo.htm" title="Biz Info">My Bisuness Info</a></p>
+                    <p><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>&nbsp;&nbsp; <a href="bizInfo.htm" title="Busi Info">My Business Info</a></p>
                     <p><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>&nbsp;&nbsp; <a href="#" title="TC Services">TC Services</a></p>
                     <p><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>&nbsp;&nbsp; <a href="#" title="TC News">Message From TC</a></p>
                 </div>

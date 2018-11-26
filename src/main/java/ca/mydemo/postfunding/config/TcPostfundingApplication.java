@@ -1,4 +1,4 @@
-package ca.thinkingcapital.postfunding.config;
+package ca.mydemo.postfunding.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

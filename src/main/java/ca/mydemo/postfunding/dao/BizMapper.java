@@ -1,8 +1,8 @@
-package ca.thinkingcapital.postfunding.dao;
+package ca.mydemo.postfunding.dao;
 
 
-import ca.thinkingcapital.postfunding.domain.Client;
-import ca.thinkingcapital.postfunding.domain.Opportunity;
+import ca.mydemo.postfunding.domain.Client;
+import ca.mydemo.postfunding.domain.Opportunity;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

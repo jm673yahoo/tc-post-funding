@@ -1,4 +1,4 @@
-package ca.thinkingcapital.postfunding.domain;
+package ca.mydemo.postfunding.domain;
 
 public class LoginMessage {
     private boolean allowMultiLingual;

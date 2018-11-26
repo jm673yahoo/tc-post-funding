@@ -1,4 +1,4 @@
-package ca.thinkingcapital.postfunding.config;
+package ca.mydemo.postfunding.config;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.apache.logging.log4j.LogManager;
@@ -18,7 +18,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableTransactionManagement
-@MapperScan("ca.thinkingcapital.postfunding.dao")
+@MapperScan("ca.mydemo.postfunding.dao")
 public class DataSourceConfig
 {
 
@@ -53,7 +53,7 @@ public class DataSourceConfig
     public SqlSessionFactoryBean sqlSessionFactory() throws Exception {
         SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
-        sessionFactory.setTypeAliasesPackage("ca.thinkingcapital.postfunding.domain");
+        sessionFactory.setTypeAliasesPackage("ca.mydemo.postfunding.domain");
         sessionFactory.setMapperLocations(
                 new PathMatchingResourcePatternResolver().getResources("classpath:mybatis/mapper/*.xml"));
         return sessionFactory;

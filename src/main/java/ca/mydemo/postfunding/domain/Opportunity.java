@@ -1,4 +1,4 @@
-package ca.thinkingcapital.postfunding.domain;
+package ca.mydemo.postfunding.domain;
 
 import java.io.Serializable;
 import java.util.Date;

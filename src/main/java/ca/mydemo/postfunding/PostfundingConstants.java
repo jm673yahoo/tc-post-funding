@@ -1,4 +1,4 @@
-package ca.thinkingcapital.postfunding;
+package ca.mydemo.postfunding;
 
 public class PostfundingConstants {
     private PostfundingConstants(){}

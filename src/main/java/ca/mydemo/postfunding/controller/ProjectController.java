@@ -1,8 +1,8 @@
-package ca.thinkingcapital.postfunding.controller;
+package ca.mydemo.postfunding.controller;
 
 
-import ca.thinkingcapital.postfunding.PostfundingConstants;
-import ca.thinkingcapital.postfunding.domain.LoginMessage;
+import ca.mydemo.postfunding.PostfundingConstants;
+import ca.mydemo.postfunding.domain.LoginMessage;
 import org.apache.commons.lang3.LocaleUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;

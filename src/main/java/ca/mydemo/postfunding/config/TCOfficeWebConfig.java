@@ -1,4 +1,4 @@
-package ca.thinkingcapital.postfunding.config;
+package ca.mydemo.postfunding.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -27,7 +27,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 @Configuration
-@ComponentScan({"ca.thinkingcapital.postfunding"})
+@ComponentScan({"ca.mydemo.postfunding"})
 public class TCOfficeWebConfig extends WebMvcConfigurerAdapter {
 
     @Value("#{systemProperties['spring.profiles.active']}")
